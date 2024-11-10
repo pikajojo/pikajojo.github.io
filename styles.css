@@ -1,0 +1,279 @@
+/* 通用样式 */
+body {
+    font-family: "Verdana",  serif;
+    margin-top: 20px; /* 将内容推到导航栏下方，确保其不被覆盖 */
+    padding: 0px;
+}
+
+/* 导航栏样式 */
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+} */
+/* 导航栏样式 */
+.navbar {
+    position: fixed; /* 固定位置 */
+    top: 0; /* 距离顶部为 0 */
+    width: 100%; /* 占满整个页面宽度 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+    padding: 10px 0; /* 上下内边距 */
+    z-index: 1000; /* 确保导航栏在其他内容之上 */
+    text-align: center; /* 居中对齐 */
+    font-family: Arial, sans-serif;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.navbar-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    color: #333;
+}
+
+/* 个人信息样式 */
+/* .profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 135px;
+    height: 175px;
+    border-radius: 20%;
+    margin-right: 15px;
+}
+
+.profile-info {
+    text-align: left;
+    margin-right: 15px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-info p {
+    color: #555;
+    margin: 5px 0 0 0;
+} */
+
+/* 图标样式 */
+/* .profile-icons {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+/* 将头像和名字固定在左侧 */
+.profile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px; /* 设置侧边栏的宽度 */
+    height: 100vh; /* 全屏高度 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 右侧阴影 */
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-photo {
+    width: 135px;
+    height: 175px;
+    border-radius: 20%;
+    margin-right: 15px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+.profile h2 span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.profile i {
+    font-size: 18px;
+    color: #555;
+}
+/* .profile p {
+    font-size: 14px;
+    color: #555;
+} */
+/* .profile-icons {
+    /* display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: inherit;
+}*/
+
+.profile-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-icons p,
+.profile-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 8px;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.profile-icons i {
+    width: 20px;
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto; /* 图片上下留空白，并水平居中 */
+    max-width: 100%; /* 使图片自适应宽度，防止超出容器 */
+    height: auto; /* 保持图片的宽高比 */
+    width: 135px;
+    height: 175px;
+    border-radius: 20%;
+}
+
+
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+h2 {
+    /* border-bottom: 2px solid #333; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1em 0; */
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #ddd; 
+}
+/* 通用样式 */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+/* 容器居中 */
+main {
+    max-width: 800px; /* 设置最大宽度 */
+    margin: 0 auto; /* 自动居中 */
+    padding: 20px; /* 上下内边距 */
+}
+
+/* 各个 section 的样式 */
+section {
+    margin-bottom: 30px; /* 各个 section 之间的间距 */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+}
+
+section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin: 0;
+}
+
+
+
+.projects {
+    margin: 20px 0;
+}
+
+.projects h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.projects hr {
+    border: 1px solid #333;
+    margin: 10px 0 20px 0;
+}
+
+.project-item {
+    margin-bottom: 30px; /* 每个项目之间的间距 */
+}
+
+.project-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.project-item a {
+    color: #0044cc; /* 链接颜色 */
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.project-item ul {
+    padding-left: 20px;
+}
+
+.project-item ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
