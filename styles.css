@@ -5,6 +5,15 @@ body {
     padding: 0px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row; /* 默认水平排列 */
+  }
+.sections {
+    flex-grow: 1; /* 占满剩余空间 */
+    padding: 20px;
+}
+
 /* 导航栏样式 */
 /* .navbar {
     display: flex;
@@ -86,17 +95,31 @@ body {
 
 /* 将头像和名字固定在左侧 */
 .profile {
-    position: fixed;
+    position: relative;
     top: 0;
-    left: 0;
-    width: 220px; /* 设置侧边栏的宽度 */
+    left: -10px;
+    /* width: 220px; 设置侧边栏的宽度 */
+    width: 20%;
     height: 100vh; /* 全屏高度 */
     background-color: #f9f9f9; /* 背景颜色 */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 右侧阴影 */
-    padding-top: 30px;
+    padding: 40px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* 在小屏幕上改为垂直排列 */
+    }
+    .profile {
+      width: 100%; /* 占满整个宽度 */
+      height: auto; /* 高度自动调整 */
+      box-shadow: none; /* 去除阴影效果，保持简洁 */
+    }
+    .sections {
+      width: 100%; /* 占满整个宽度 */
+    }
+  }
 
 .profile-photo {
     width: 135px;
@@ -157,7 +180,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: inherit;
-    gap: 8px;
+    gap: 4px;
     justify-content: center;
     font-size: 14px;
 }
@@ -208,7 +231,7 @@ h2 {
 /* 容器居中 */
 main {
     max-width: 800px; /* 设置最大宽度 */
-    margin: 0 auto; /* 自动居中 */
+    margin: 0 10%; /* 自动居中 */
     padding: 20px; /* 上下内边距 */
 }
 
