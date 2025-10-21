@@ -1,143 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yajing Wang</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-</head>
-<nav class="navbar">
-    <div class="navbar-links">
-    <a href="#about">About Me</a>
-    <a href="#educations">Educations</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#honors">Awards</a>
-    <a href="#hobby">Hobby</a>
-</div>
-</nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yajing Wang — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Sora: 干净有力的无衬线；Inter: 正文阅读友好 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&display=swap" rel="stylesheet">
 
-
+</head>
 <body>
-<main>
 
-    <div class="container">
-    <div class="profile">
-        <img src="yajing_pic4.jpg" alt="Profile Photo" class="profile-photo">
-        <div class="profile-info">
-            <h1 style="font-family: Arial, Helvetica, sans-serif;">Yajing Wang</h1>
-            <p style="font-family: Arial, Helvetica, sans-serif;">Department of ETRO,   
-                    Vrije Universiteit Brussel</p>
-        </div>
-        <div class="profile-icons">
-            <a><i class="fas fa-map-marker-alt"></i> Brussels, Belgium</a>
-            <a href="mailto:Yajing.Wang@vub.be" ><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/yajing-wang-043254251/" ><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://www.instagram.com/pikajojo_/"><i class="fab fa-instagram" ></i>Instagram</a>
-        </div>
-    </div>
+  <!-- 页面包裹，做大圆角和阴影 -->
+  <div class="page">
 
+    <!-- 顶部导航 -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav-item active" href="index.html">About<span>/</span></a>
+        <a class="nav-item has-dropdown" href="work.html">Work</a>      
+        <a class="nav-item" href="edu.html">Education</a>
+        <a class="nav-item" href="project.html">Project</a>
+        <a class="nav-item" href="others.html">Others</a>
+      </nav>
+    </header>
 
-    <div class="sections">
-    <section id="about">
-        <h2>About Me</h2>
-        <ul>
-            <li>Like to delve into abstract theoretical issues and think about philosophical questions.</li>
-            <li>Like jobs with precise standards and clear boundaries between right and wrong.</li>
-            <li>Extremely patient when writing code, and I won't get bored even if spending a whole day debugging.</li>
-            <li>A little bit of perfectionism.</li>
-            <li>Love nature and animals and have a very cute cat named xiaogou(puppy).</li>
-
-        </ul>
-        <img src="xiaogou.jpg" alt="Profile Photo" class="center-image">
-    </section>
-    <section id="educations">
-        <h2>Educations</h2>
-        <ul>
-            <li>2023.09 - present, Vrije Universiteit Brussel, Master of Applied Computer Science</li>
-            <li>2020.09 - 2022.07, Beijing Institute of Technology, Master of Applied Economics</li>
-            <li>2016.09 - 2020.07, Jilin University, Bechalor of Resource Exploration Engineering </li>
-
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <p>2022.06 - 2023.07, Technology Journalist, China Educational Network</p>
-        <li>Responsible for writing articles about educational technology and reporting on the latest industry trends.</li>
-        <li>Report on the current status and experience of digital transformation in Chinese universities.</li>
-        <li>Organize and participate in technology-related conferences and seminars.</li>
-    </section>
-
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-
-        <div class="project-item">
-        <p >2023.09 - 2023.12, Save the Most Precious Thing - text adventure game </p>
-        <a href="https://github.com/izen57/Save-the-Most-Precious-Thing" >GitHub: https://github.com/izen57/Save-the-Most-Precious-Thing</a>
-        <li>Collaborated with a partner to develop a fully functional original and creative game, the smooth division of work and
-            collaboration demonstrates exceptional communication skills.</li>
-        <li>Conceived and executed the foundational game design and mechanics, showcasing significant abilities in analytical
-            thinking.</li>
-        <li>Applied Object-Oriented Programming principle to achieve a flexible, concise, and highly scalable code style.</li>
-        </div>
-  
-
-        <div class="project-item">
-        <p>2023.09 - 2023.12, Biological signal and image processing - data analysis project</p>
-        <a href="https://github.com/pikajojo/biomedical_image_and_signal" >GitHub: https://github.com/pikajojo/biomedical_image_and_signal</a>
-        <li>Skilled use of NumPy Sklearn Matplotlib, execute linear contrast mapping and Histogram equalization of brain image,
-            design own moving average filter function to denoise ECG signal, and use SciPy to detect Q,R,S peaks on ECG signal.</li>
+    <!-- 英雄区 -->
+    <main class="hero">
+      <div class="hero-inner container">
+        <!-- 左侧：拱形头像卡 -->
+        <div class="portrait-card">
+          <!-- 用你的图片路径替换 images/yajing.jpg -->
+          <img src="images/yajing_pic_20250415.jpeg" alt="Yajing Wang portrait">
         </div>
 
+        <!-- 右侧：标题 + 文案 -->
+        <section class="intro">
+          <h1 class="display">I’m Yajing.</h1>
+
+          <h2 class="kicker">
+            I’m a data engineer, backend-leaning developer and curious about system networks, 
+            currently based in Brussels, Belgium.
+          </h2>
+
+          <div class="copy">
+            <p>
+              Over the past years, I’ve explored data analysis, web development, and a bit of product thinking —
+              moving between research, journalism, and engineering. I enjoy clean systems, clear constraints, and the
+              patience of solving one tricky bug at a time.
+            </p>
+            <div class="cta-row social-links">
+                <a class="btn social" href="https://www.linkedin.com/in/yajing-wang-043254251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a class="btn social" href="https://www.instagram.com/pikajojo_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a class="btn social" href="https://www.facebook.com/profile.php?id=100012789131067" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a class="btn social" href="https://github.com/pikajojo?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="fab fa-github"></i> Github
+                </a>
+              </div>
+              
+          </div>
+        </section>
+      </div>
+    </main>
+
+  </div><!-- /.page -->
+
+  <!-- 放在<body>结尾处 -->
+<footer class="site-footer" role="contentinfo" aria-label="页面底部">
+  <div class="footer-inner">
+    <p class="copyright">
+      © <span id="year">2025</span> Yajing Wang. All rights reserved.
+    </p>
+
+    <nav class="footer-nav" aria-label="法律与政策">
+      <!-- <a href="/privacy" rel="nofollow">隐私政策</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="/terms" rel="nofollow">使用条款</a> -->
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="mailto:wangyajing1016@gmail.com"><strong>Contact Me</strong></a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // 自动写入当前年份
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 
-         <div class="project-item">
-        <p>2024.02 - 2024.05, Weather Forecast Correction - data analysis and machine learning project</p>
-        <a href="https://colab.research.google.com/drive/1xR61cDMXFcU7rmIjh2tKkVCRZrXGxOgq#scrollTo=fDw3f8-W2-ab" >Colab: https://colab.research.google.com/drive/1xR61cDMXFcU7rmIjh2tKkVCRZrXGxOgq#scrollTo=
-            fDw3f8-W2-ab</a>
-        
-        <li>Employed NumPy Sklearn and Pandas to preprocess weather forecast data and train models, used random search and grid search to tune hyperparameters, and obtained a Random Forest model with mean error = -0.69.</li>
-        </div>
-
-
-        <div class="project-item">
-        <p>2024.02 - 2024.05, Sports rehabilitation patient muscle signal data analysis project</p>
-        <li>Searched the literature and collected 14 methods to analyze muscle fatigue based on EMG signals and reproduced them all with code. This project scored 18/20 by the supervisor.
-        </li>
-         </div>
-
-    </section>
-
-    <section id="honors">
-        <h2>Awards</h2>
-        <ul>
-            <li>2017.09, National Scholarship, China Education Ministry</li>
-            <li>2024.10, Master Scholarship for the academic year 2024-2025, VUB</li>
-
-
-        </ul>
-    </section>
-
-    <section id="hobby">
-        <h2>Hobby</h2>
-        <ul>
-            <li>Walking in the woods or park.</li>
-            <li>Attending film festivals and watching movies.</li>
-            <li>Practicing Judo every week and I am currently a yellow belt.</li>
-            <li>Cooking delicious Chinese food.</li>
-
-        </ul>
-    </section>
-
-</div>
-
-</div>
-    <!-- 继续添加其他板块 -->
-
-</main>
 </body>
 </html>

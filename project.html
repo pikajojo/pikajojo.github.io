@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Yajing Wang</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <section class="page">
+
+    <!-- 顶部导航 -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav-item active" href="index.html">About<span>/</span></a>
+        <a class="nav-item has-dropdown" href="work.html">Work</a>      
+        <a class="nav-item" href="edu.html">Education</a>
+        <a class="nav-item" href="project.html">Project</a>
+        <a class="nav-item" href="others.html">Others</a>
+      </nav>
+    </header>
+
+      <main class="container">
+        <section >
+
+            <img class="page-photo" src="images/project.jpeg" alt="Photo for Project page" loading="lazy">
+        </section>
+        <section class="page-section">
+          <h2 class="fun-sub">Save the Most Precious Thing - text adventure game</h2>
+            <p class="sub-meta"><strong>2023.09 – 2023.12</strong>    VUB</p>
+            <a href="https://github.com/izen57/Save-the-Most-Precious-Thing">GitHub: https://github.com/izen57/Save-the-Most-Precious-Thing</a>
+
+
+            <ul class="card-list">
+            <li>
+                <ul class="mini-bullets">
+                    <li>Collaborated with a partner to develop a fully functional original and creative game, demonstrating exceptional communication skills.</li>
+                    <li>Conceived and executed the foundational game design and mechanics, showcasing analytical thinking.</li>
+                    <li>Applied OOP principles to achieve flexible, concise, and highly scalable code.</li>
+                  </ul>
+            </li>
+            </ul>
+
+            <h2 class="fun-sub">U-Net Modelling - Master Thesis</h2>
+            <p class="sub-meta"><strong>2024.09 – 2025.06</strong>    VUB</p>
+
+            <ul class="card-list">
+              <li>
+                <ul class="mini-bullets">
+                    <li>Cleaning data from 100 European cities, including geographic morphology and temperature data, and performing spatiotemporal analysis.</li>
+                    <li>Building basic models, including linear and MLP, ensuring benchmark performance.</li>
+                    <li>Using 10 cities and TB data, built a deep learning model, U-Net, and ran it on an HPC, reducing prediction time by two orders of magnitude.</li>
+                  </ul>
+            </li>
+            </ul>
+
+          
+        </section>
+      </main>
+
+</section>
+
+  <!-- 放在<body>结尾处 -->
+    <footer class="site-footer" role="contentinfo" aria-label="页面底部">
+      <div class="footer-inner">
+        <p class="copyright">
+          © <span id="year">2025</span> Yajing Wang. All rights reserved.
+        </p>
+    
+        <nav class="footer-nav" aria-label="法律与政策">
+          <!-- <a href="/privacy" rel="nofollow">隐私政策</a>
+          <span class="dot" aria-hidden="true">·</span>
+          <a href="/terms" rel="nofollow">使用条款</a> -->
+          <span class="dot" aria-hidden="true">·</span>
+          <a href="mailto:wangyajing1016@gmail.com"><strong>Contact Me</strong></a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script>
+      // 自动写入当前年份
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
